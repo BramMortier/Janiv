@@ -95,7 +95,5 @@
         </section>
     </main>
 
-    <?php include PROJ_ROOT . "/app/views/partials/footer.php" ?>
-
 </body>
 </html>
