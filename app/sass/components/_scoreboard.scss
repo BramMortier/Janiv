@@ -1,0 +1,69 @@
+@use "../utils" as *;
+
+.scoreboard {
+    padding-inline: var(--space-md);
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--space-xl);
+        row-gap: var(--space-xxl);
+
+        @include breakpoint(mobileS) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__player {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__player-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+        align-items: center;
+
+        p {
+            width: 100%;
+            padding-bottom: var(--space-xs);
+            margin-bottom: var(--space-xs);
+            border-bottom: 1px solid var(--col-gray-400);
+        }
+    }
+
+    &__player-icon {
+        box-shadow: 0 3px 6px var(--col-shadow);
+        background-color: var(--col-red);
+        height: 40px;
+        width: 48px;
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: 4px;
+    }
+
+    &__player-scores {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+        align-items: center;
+    }
+
+    &__btns {
+        justify-self: flex-end;
+        position: fixed;
+        z-index: 250px;
+        bottom: -100%;
+        right: var(--space-md);
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+        width: calc(100% - (var(--space-md) * 2));
+        transition: all ease 0.3s;
+
+        &--open {
+            bottom: 4.6875rem;
+        }
+    }
+}

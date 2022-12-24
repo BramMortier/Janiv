@@ -1,0 +1,67 @@
+.game-settings {
+    padding-inline: var(--space-md);
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    &__name,
+    &__losing-score {
+        max-width: 250px;
+    }
+
+    &__players {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    &__player {
+        display: flex;
+        align-items: center;
+        gap: var(--space-xs);
+        margin-bottom: var(--space-xs);
+    }
+
+    &__player-icon,
+    &__player-delete {
+        background-color: var(--col-red);
+        box-shadow: 0 3px 6px var(--col-shadow);
+        height: 35px;
+        width: 60px;
+        padding: var(--space-xxs);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 20px;
+        }
+    }
+
+    &__player-delete {
+        border: none;
+        outline: none;
+        background-color: var(--col-gray-800);
+    }
+
+    &__player-options {
+        margin-top: -8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        button {
+            margin-top: var(--space-xs);
+        }
+    }
+
+    &__create-btn {
+        position: fixed;
+        bottom: 4.6875rem;
+        left: var(--space-md);
+        width: calc(100% - (var(--space-md) * 2));
+    }
+}

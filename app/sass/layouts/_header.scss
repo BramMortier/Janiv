@@ -1,0 +1,30 @@
+@use "../base" as *;
+
+.header {
+    padding: var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+
+    &__buttons {
+        gap: var(--space-xs);
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        justify-self: flex-start;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__profile {
+        height: 40px;
+        width: 40px;
+        padding: var(--space-xs);
+        background-color: var(--col-white);
+        border-radius: 4px;
+        box-shadow: 0 3px 6px var(--col-shadow);
+    }
+}

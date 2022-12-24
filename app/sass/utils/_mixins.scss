@@ -1,0 +1,14 @@
+@mixin menu {
+    position: fixed;
+    z-index: 750;
+    width: calc(100% - (var(--space-md) * 2));
+    max-width: 40rem;
+    bottom: -100%;
+    padding: var(--space-md);
+    background-color: var(--col-white);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px var(--col-shadow);
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s;
+}

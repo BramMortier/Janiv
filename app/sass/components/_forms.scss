@@ -1,0 +1,50 @@
+.input {
+    outline: none;
+    border: 1px solid var(--col-gray-400);
+    background-color: var(--col-gray-200);
+    width: 100%;
+    border-radius: 4px;
+    height: 2.1875rem;
+    padding-left: var(--space-sm);
+    color: var(--gray-800);
+    font-size: var(--text-sm);
+
+    &::placeholder {
+        color: var(--col-gray-600);
+        font-size: var(--text-sm);
+    }
+
+    &--invalid {
+        border: 1px solid var(--col-red);
+    }
+
+    &--inverted {
+        background-color: var(--col-white);
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: var(--space-xxs);
+    width: 100%;
+}
+
+.input-error {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    color: var(--col-red);
+    font-size: var(--text-xs);
+}
+
+.error-icon {
+    width: 10px;
+    display: none;
+    margin-top: 2px;
+
+    &--show {
+        display: initial;
+    }
+}

@@ -1,0 +1,104 @@
+:root {
+    --primary-font: "sofia-pro", sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-xxl: 3rem;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--col-gray-900);
+    font-size: var(--text-md);
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+a {
+    color: var(--col-gray-900);
+}
+
+h1,
+.text-xxl {
+    font-size: var(--text-xxl);
+}
+
+h2,
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+h3,
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+h4,
+.text-md {
+    font-size: var(--text-md);
+}
+
+h5,
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+h6,
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.col-red {
+    color: var(--col-red);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-space-xxxs {
+    margin-bottom: var(--space-xxxs);
+}
+
+.text-space-xxs {
+    margin-bottom: var(--space-xxs);
+}
+
+.text-space-xs {
+    margin-bottom: var(--space-xs);
+}
+
+.text-space-sm {
+    margin-bottom: var(--space-sm);
+}
+
+.text-space-md {
+    margin-bottom: var(--space-md);
+}
+
+.text-space-lg {
+    margin-bottom: var(--space-lg);
+}
+
+.emphasize {
+    color: var(--col-gray-900);
+}
+
+.subtle {
+    color: var(--col-gray-800);
+}
